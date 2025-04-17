@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Mayhem</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Night Mayhem</h1>
+            <button class="theme-toggle" id="theme-toggle">Dark Mode</button>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div class="features-container">
+            <div class="card random-picker">
+                <h2>Random Movie Picker</h2>
+                <div class="filters">
+                    <select id="genre-filter">
+                        <option value="">All Genres</option>
+                        <option value="action">Action</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="scifi">Sci-Fi</option>
+                    </select>
+                    <select id="year-filter">
+                        <option value="">All Years</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <button id="random-button">Pick Random Movie</button>
+                </div>
+                <div id="random-result"></div>
+            </div>
+            
+            <div class="card trending">
+                <h2>Trending Movies</h2>
+                <div class="movies-grid" id="trending-movies"></div>
+            </div>
+            
+            <div class="card watchlist">
+                <h2>My Watchlist</h2>
+                <ul class="watchlist-items" id="watchlist-items"></ul>
+            </div>
+            
+            <div class="card voting">
+                <h2>Movie Voting</h2>
+                <div class="vote-container">
+                    <div>
+                        <input type="text" id="vote-movie-input" placeholder="Add movie to vote">
+                        <button id="add-vote-movie">Add</button>
+                    </div>
+                    <ul class="vote-items" id="vote-items"></ul>
+                    <button id="share-vote">Create Voting Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="movie-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div class="movie-details" id="movie-details"></div>
+        </div>
+    </div>  
+</body>
+</html>
