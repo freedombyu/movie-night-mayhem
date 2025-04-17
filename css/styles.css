@@ -253,7 +253,7 @@ body.dark-mode .movie-details-container {
   line-height: 1.4;
   margin-bottom: var(--spacing-sm);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+ 
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
